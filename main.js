@@ -1,6 +1,6 @@
 import './style.css'
 async function getData(city) {
-    const input =  await fetch("http://api.weatherapi.com/v1/current.json?key=1f90bb24247a4d1cbc5104240242805&q="+city+"&aqi=yes")
+    const input =  await fetch("https://api.weatherapi.com/v1/current.json?key=1f90bb24247a4d1cbc5104240242805&q="+city+"&aqi=yes")
     const a = await input.json()
     return await a
 }
